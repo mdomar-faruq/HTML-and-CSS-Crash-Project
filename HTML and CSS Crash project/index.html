@@ -1,0 +1,134 @@
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Html and CSS</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- logo and menu Start-->
+
+ <div class="navbar">
+  <div class="container">
+   <a class="logo" href="#">Logo <span>Set</span></a>
+   <img id="mobile-cta" class="mobile-menu" src="image/menu.svg" alt="open navigation">
+  <nav>
+   <img id="mobile-exit" class="mobile-menu-exit" src="image/exit.svg" alt="close-navigation">
+
+    <ul class="primary-nav">
+     <li class="current"><a href="#">Home</a> </li>
+      <li><a href="#">Features</a> </li>
+      <li><a href="#">pricing</a></li>
+    </ul>
+
+    <ul class="secondary-nav">
+     <li class="current"><a href="#">Contact</a> </li>
+     <li class="go-prmium-cta"><a href="#">Go Premium</a></li>
+    </ul>
+    
+  </nav>
+  </div>
+ </div>
+
+<!--logo and menu end-->
+
+<!--Baner or Hero start-->
+<section class="hero">
+<div class="container">
+ <div class="left-col">
+  <p class="subhead">It's Nitty &amp; Gritty</p>
+  <h1>A task App That Doesn't Stink</h1>
+  <div class="hero-cta">
+   <a href="#" class="primary-cta">Try for free</a>
+   <a href="#" class="watch-video-cta"><img src="image/watch.svg" alt="watch a video">Watch a video </a>
+  </div>
+ </div>
+ <img src="image/illustration.svg" class="hero-img" alt="illustration">
+</div>
+</section>
+<!--banner and hero end-->
+
+<!-- Feature Section start-->
+<section class="Features-section">
+ <div class="container">
+<ul class="features-list">
+ <li>Unlimated Tasks</li>
+ <li>SMS Task Reminders</li>
+ <li>confetti explosion upon Task Compi
+  lections
+ </li>
+ <li>Social meida announcement</li>
+ <li>real time collaboration</li>
+ <li>other awsome Feature</li>
+</ul>
+<img src="image/holding-phone.jpg" alt="Man holding phone">
+ </div>
+</section>
+<!-- Feature Section end-->
+
+<!-- Testimonials-section -->
+<section class="testimonials-section">
+ <div class="container">
+  <ul>
+   <li>
+    <img src="image/person.jpg" alt="person">
+    <blockquote>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius nihil, culpa consectetur ad sed in corporis repudiandae repellat aut deserunt eaque fuga nobis delectus id laborum provident quis consequuntur sequi!</blockquote>
+    <cite>- Omar dev</cite>
+   </li>
+   <li>
+    <img src="image/person.jpg" alt="person">
+    <blockquote>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius nihil, culpa consectetur ad sed in corporis
+     repudiandae repellat aut deserunt eaque fuga nobis delectus id laborum provident quis consequuntur sequi!</blockquote>
+    <cite>- Omar dev</cite>
+   </li>
+   <li>
+    <img src="image/person.jpg" alt="person">
+    <blockquote>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius nihil, culpa consectetur ad sed in corporis
+     repudiandae repellat aut deserunt eaque fuga nobis delectus id laborum provident quis consequuntur sequi!</blockquote>
+    <cite>- Omar dev</cite>
+   </li>
+  </ul>
+ </div>
+</section>
+<!-- Testimonials-section end-->
+
+<!-- Contact section -->
+<section class="contact-section">
+ <div class="container">
+  <div class="contact-left">
+   <h2>Contact</h2>
+   <form action="">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name">
+    <lebel for="message">Message</lebel>
+    <textarea name="message" id="message" cols="30" rows="10"
+    ></textarea>
+    <input type="submit" class="send-massage-cta" value="Send-massage">
+   </form>
+  </div>
+  <div class="contact-right">
+   <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.515390113348!2d90.46070931445679!3d23.800265292787643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7bb01cb9fb3%3A0x3aa52208c4cf7f33!2sBJIT%20Ltd%20-%20Head%20Office!5e0!3m2!1sen!2sbd!4v1617473857244!5m2!1sen!2sbd"
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+  </div>
+ </div>
+</section>
+<!-- Contact section end -->
+<script>
+    const mobileBtn = document.getElementById('mobile-cta')
+      nav = document.querySelector('nav')
+      mobileBtnExit = document.getElementById('mobile-exit');
+
+      mobileBtn.addEventListener('click', () => {
+        nav.classList.add('menu-btn');
+      })
+
+      mobileBtnExit.addEventListener('click', () => {
+          nav.classList.remove('menu-btn');
+        })
+</script>
+
+</body>
+</html>
